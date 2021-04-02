@@ -15,4 +15,11 @@ https://www.kaggle.com/anmolkumar/health-insurance-cross-sell-prediction
 <br>- A webpage where an analyst enters customer details
 <br>- Result: Final suggestion to run campaign against this customer or not.
 
+## Technologies used
 
+<br>- Python3
+<br>- Pandas
+<br>- Numpy
+<br>- Scikit-learn
+<br>- Streamlit
+<br>- Heroku
