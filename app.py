@@ -9,20 +9,11 @@ st.write("""
 # Cross-sell Prediction App
 This app predicts if the existing customers will buy vehicle insurance!
 Data obtained from the [kaggle](https://www.kaggle.com/anmolkumar/health-insurance-cross-sell-prediction).
+
 """)
 
 st.sidebar.header('User Input Features')
 
-# st.sidebar.markdown("""
-# [Example CSV input file](https://raw.githubusercontent.com/dataprofessor/data/master/penguins_example.csv)
-# """)
-
-# Collects user input features into dataframe
-
-# uploaded_file = st.sidebar.file_uploader("Upload your input CSV file", type=["csv"])
-# if uploaded_file is not None:
-#     input_df = pd.read_csv(uploaded_file)
-# else:
 
 def user_input_features():
     
@@ -34,7 +25,7 @@ def user_input_features():
     vehicle_age = st.sidebar.selectbox('Vehicle Age',('< 1 Year','1-2 Year','> 2 Years'))
     vehicle_damage = st.sidebar.selectbox('Vehicle Damage',('Yes','No'))
     annual_premium = st.sidebar.slider('Annual Premium', 2630,540165,271397)
-    policy_sales_channel = st.sidebar.slider('Annual Premium', 1,163,80)
+    policy_sales_channel = st.sidebar.slider('Policy Sales Channel', 1,163,80)
     vintage = st.sidebar.slider('Vintage', 10,299,150)
 
     def change_text_to_num(x):
