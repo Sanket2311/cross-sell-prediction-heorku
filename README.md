@@ -1,6 +1,7 @@
 # Health Insurance Cross Sell Prediction 
 
-## App Link : https://cross-sell-prediction-heroku.herokuapp.com/
+## App Link Heroku: https://cross-sell-prediction-heroku.herokuapp.com/
+## App Link AWS: http://cross.dotslashai.com/
 ## Objectives
 
 <br>- Our client is an Insurance company that has provided Health Insurance to its customers now they need your help in building a model to predict whether the policyholders (customers) from past year will also be interested in Vehicle Insurance provided by the company. 
@@ -19,6 +20,12 @@ https://www.kaggle.com/anmolkumar/health-insurance-cross-sell-prediction
 <br>- A webpage where an analyst enters customer details
 <br>- Result: Final suggestion to run campaign against this customer or not.
 
+## Docker deployment commands:
+
+docker build -t cross-sell .
+docker run -d --name cs -p 80:80 cross-sell
+
+
 ## Technologies used
 
 <br>- Python3
@@ -27,3 +34,4 @@ https://www.kaggle.com/anmolkumar/health-insurance-cross-sell-prediction
 <br>- Scikit-learn
 <br>- Streamlit
 <br>- Heroku
+<br>- AWS EC2 and docker
